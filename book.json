@@ -1,0 +1,37 @@
+{
+    "title": "LinkActive 媒体方文档",
+    "description": "LinkActive接入文档",
+    "language": "zh-hans",
+    "links": {
+        "sidebar": {
+            "LinkActive 媒体方文档": "https://linkedme.gitbooks.io/linkactive-dsp/content/"
+            }
+        },
+
+    "plugins": [ "copy-code-button","codetabs","anchor-navigation-ex","-search","-lunr","search-pro","ga","-sharing","expandable-chapters","3-ba"], 
+    "pluginsConfig": {  
+             
+             "anchor-navigation-ex": {
+                "isShowTocTitleIcon": true,
+                "tocLevel1Icon": "fa fa-hand-o-right",
+                "tocLevel2Icon": "fa fa-hand-o-right",
+                "tocLevel3Icon": "fa fa-hand-o-right"
+            },
+        
+        "search-pro": {
+        "cutWordLib": "nodejieba",
+        "defineWord" : ["Gitbook Use"]
+    },
+    
+    "ga": {
+        "token": "UA-93686943-4"
+    },
+    
+    "3-ba": {
+            "token": "3cb7d8ba383b0ff628c7e50866aba900"
+        }
+
+    
+    }
+    
+}
