@@ -1,10 +1,10 @@
 {
     "title": "LinkActive 需求方文档",
-    "description": "LinkActive接入文档",
+    "description": "LinkActive广告主接入文档",
     "language": "zh-hans",
     "links": {
         "sidebar": {
-            "LinkActive 媒体方文档": "https://linkedme.gitbooks.io/linkactive-dsp/content/"
+            "LinkActive 需求方文档": "https://linkedme.gitbooks.io/linkactive-dsp/content/"
             }
         },
 
