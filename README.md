@@ -6,7 +6,7 @@ LinkActive是[LinkedME](http://www.linkedme.cc)旗下专注于移动APP用户拉
 
 广告主可以选择SDK或API形式接入LinkActive，具体接入规范参见：
 
-[媒体方接入规范](/standard.md)
+[需求方接入规范](/standard.md)
 
 任何问题欢迎联系：support@linkedme.cc
 
