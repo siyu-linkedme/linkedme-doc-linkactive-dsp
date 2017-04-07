@@ -26,6 +26,7 @@
 |logo素材|各种尺寸的APP logo图片||
 |文字及图片素材|在媒体上投放的素材内容||
 
+
 ### 沉默用户列表
 广告主向LinkActive平台提供沉默用户的设备ID（如下表），提供方式分为两种，第一是离线方式，第二是在线方式。
 
@@ -34,7 +35,7 @@
 |平台|设备ID|设备ID的MD5|示例|
 |--|--|--|--|
 |Android|imei|md5（imei）|IMEI：862033033085604</br>MD5（IMEI）：b0131ecfa9495650f1fee8e11dd7164f|
-|iOS|IDFA|md5（IDFA）|IDFA：FFFF50E1-4F95-44E8-9D19-25FE4E5AB8F8</br>md5（IDFA）：7ed40e55b2f37c519fa23a63d31d6cdc|
+|iOS|IDFA|md5（IDFA）|IDFA：FFFF50E1-4F95-44E8-9D19-25FE4E5AB8F8 </br>md5（IDFA）：7ed40e55b2f37c519fa23a63d31d6cdc|
 
 <font color="red">注意事项：imei和IDFA必须是原值，不要做大小写转化；</font>
 
@@ -66,11 +67,11 @@
 
 广告主接入LinkActive平台主要工作有两部分，第一部分是提供沉默用户列表数据；第二部分是提供APP相关信息，包括APP基本信息和素材内容。然后查看沉默用户的拉活即可。
 
-广告主要及时更新沉默用户列表数据，如果使用在线方式，涉及到定期的更新沉默用户数据。图3-1描述LInkActive的工作原理；
+广告主要及时更新沉默用户列表数据，如果使用在线方式，涉及到定期的更新沉默用户数据。
 
+LinkActive的工作原理：
 
-
-图3-1 LinkActive工作原理及接入流程
+![](/assets/dsp-1.png)
 
 
 # 核对数据
