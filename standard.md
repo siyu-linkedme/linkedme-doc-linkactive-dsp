@@ -18,9 +18,9 @@
 
 |信息|说明|示例|
 |--|--|--|
-|ios_uri_scheme|1. iOS系统通过此值唤起APP；<br> 2. 此URI Scheme老版本的APP要能够识别；<br/> 3. 该值需包含统计信息，用于标识来自LinkActive平台的拉活；</br> 4. 此URI Scheme要能够动态添加参数，便于跳转到APP的不同详情页面。<font color="red">(在媒体方投放的Banner，用户点击后，能够直接跳转到广告主APP的具体详情页面）</font> |sdk123://home/news?gd_ext_json={"event":"home","label":"click_schema_linkactive"}|
+|ios_uri_scheme|1. iOS系统通过此值唤起APP；<br> 2. 此URI Scheme老版本的APP要能够识别；<br> 3. 该值需包含统计信息，用于标识来自LinkActive平台的拉活；<br> 4. 此URI Scheme要能够动态添加参数，便于跳转到APP的不同详情页面。<font color="red">(在媒体方投放的Banner，用户点击后，能够直接跳转到广告主APP的具体详情页面）</font> |sdk123://home/news?gd_ext_json={"event":"home","label":"click_schema_linkactive"}|
 |appstore_url|AppStore下载地址||
-|android_uri_scheme|1. Android系统通过此值唤起APP；<br> 2. 此URI Scheme老版本的APP要能够识别；&lt;br> 3. 该值需包含统计信息，用于标识来自LinkActive平台的拉活；&lt;br> 4. 此URI Scheme要能够动态添加参数，便于跳转到APP的不同页面。<font color="red">(在媒体方投放的Banner，用户点击后，能够直接跳转到广告主APP的具体详情页面）</font> |sdk124://home/news?gd_ext_json={"event":"home","label":"click_schema_linkedme“}|
+|android_uri_scheme|1. Android系统通过此值唤起APP；<br> 2. 此URI Scheme老版本的APP要能够识别；<br> 3. 该值需包含统计信息，用于标识来自LinkActive平台的拉活；<br> 4. 此URI Scheme要能够动态添加参数，便于跳转到APP的不同页面。<font color="red">(在媒体方投放的Banner，用户点击后，能够直接跳转到广告主APP的具体详情页面）</font> |sdk124://home/news?gd_ext_json={"event":"home","label":"click_schema_linkedme“}|
 |pkg_name|安卓包名||
 |apk_url|Android下载地址||
 |h5_url|和APP内的内容一致的h5页面链接||
@@ -35,8 +35,8 @@
 
 |平台|设备ID|设备ID的MD5|示例|
 |--|--|--|--|
-|Android|imei|md5（imei）|IMEI：862033033085604</br>MD5（IMEI）：b0131ecfa9495650f1fee8e11dd7164f|
-|iOS|IDFA|md5（IDFA）|IDFA：FFFF50E1-4F95-44E8-9D19-25FE4E5AB8F8 </br>md5（IDFA）：7ed40e55b2f37c519fa23a63d31d6cdc|
+|Android|imei|md5（imei）|IMEI：862033033085604<br>MD5（IMEI）：b0131ecfa9495650f1fee8e11dd7164f|
+|iOS|IDFA|md5（IDFA）|IDFA：FFFF50E1-4F95-44E8-9D19-25FE4E5AB8F8 <br>md5（IDFA）：7ed40e55b2f37c519fa23a63d31d6cdc|
 
 <font color="red">注意事项：imei和IDFA必须是原值，不要做大小写转化；</font>
 
