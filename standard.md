@@ -18,9 +18,9 @@
 
 |信息|说明|示例|
 |--|--|--|
-|ios_uri_scheme|1. iOS系统通过此值唤起APP；<br> 2. 此URI Scheme老版本的APP要能够识别；<br> 3. 该值需包含统计信息，用于标识来自LinkActive平台的拉活；<br> 4. 此URI Scheme要能够动态添加参数，便于跳转到APP的不同详情页面。<font color="red">(在媒体方投放的Banner，用户点击后，能够直接跳转到广告主APP的具体详情页面）</font> |sdk123://home/news?gd_ext_json={"event":"home","label":"click_schema_linkactive"}|
+|ios_uri_scheme|1. iOS系统通过此值唤起APP；<br> 2. 此URI Scheme老版本的APP要能够识别；<br> 3. 该值需包含统计信息，用于标识来自LinkActive平台的拉活；<br> 4. 此URI Scheme要能够动态添加参数，便于跳转到APP的不同详情页面。<font color="red">(在媒体方投放的Banner，用户点击后，能够直接跳转到广告主APP的具体详情页面）</font> |sdk123://home/news?<br>gd_ext_json={"event":"home",<br>"label":"click_schema_linkactive"}|
 |appstore_url|AppStore下载地址||
-|android_uri_scheme|1. Android系统通过此值唤起APP；<br> 2. 此URI Scheme老版本的APP要能够识别；<br> 3. 该值需包含统计信息，用于标识来自LinkActive平台的拉活；<br> 4. 此URI Scheme要能够动态添加参数，便于跳转到APP的不同页面。<font color="red">(在媒体方投放的Banner，用户点击后，能够直接跳转到广告主APP的具体详情页面）</font> |sdk124://home/news?gd_ext_json={"event":"home","label":"click_schema_linkedme“}|
+|android_uri_scheme|1. Android系统通过此值唤起APP；<br> 2. 此URI Scheme老版本的APP要能够识别；<br> 3. 该值需包含统计信息，用于标识来自LinkActive平台的拉活；<br> 4. 此URI Scheme要能够动态添加参数，便于跳转到APP的不同页面。<font color="red">(在媒体方投放的Banner，用户点击后，能够直接跳转到广告主APP的具体详情页面）</font> |sdk124://home/news?<br>gd_ext_json={"event":"home",<br>"label":"click_schema_linkedme“}|
 |pkg_name|安卓包名||
 |apk_url|Android下载地址||
 |h5_url|和APP内的内容一致的h5页面链接||
