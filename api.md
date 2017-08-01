@@ -8,7 +8,7 @@
 在线传输沉默用户方式有两种，LinkActive提供接口和广告主提供接口。<font color="red">我们建议广告主提供接口来实时判断一个设备id是否是沉默用户，以提高沉默用户判断的准确性</font>。
 
 
-### 广告主提供接口
+### 广告主需要的提供接口
 #### 判断沉默用户提供接口（必须）
 广告主提供，用于LinkActive平台调用，用来判断一个设备id是否为广告主的沉默用户。
 接口定义：
@@ -32,7 +32,7 @@
 }
 ```
 
-#### 用户活跃状态接口（必须）
+#### 用户活跃状态接口（非必须）
 广告主提供，用户LinkActive平台调用，当平台接受到用户被激活状态的请求，调用该接口通知广告主。
 接口定义：
 * URL：http://domain.com/ad/active(广告主自己定义)
@@ -44,7 +44,8 @@
 |--|--|--|--|
 |appid|String|必填|广告主的appid|
 |type|int|必填|设备id类型：<br>0：iOS<br>1：Android|
-|is_md5|boolean|必填|设备id是原值(false)，还是md5值(true)|
+|deviceId|String|必填|设备id|
+|callback|String|必填|广告主检测到该用户激活，回调LinkActive的接口使用utf8进行urlencode|
 
 * Response
 
@@ -55,4 +56,7 @@
 }
 ```
 
+### LinkActive接口
+#### callback接口
+当广告主发现该用户已经激活，那么调用该接口，通知LinkActive
 
