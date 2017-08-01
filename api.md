@@ -1,4 +1,4 @@
-# 沉默用户列表传输
+# 广告主对接文档
 广告主向LinkActive平台提供沉默用户的设备ID可以通过两种方式，第一是离线方式，第二是在线方式。
 
 请在接入前先了解这[两种方式及其优缺点](https://linkedme.gitbooks.io/linkactive-dsp/content/standard.html#312-沉默用户列表)，以便选择对您更优的方案。
