@@ -60,6 +60,11 @@
 #### callback接口
 当广告主发现该用户已经激活，那么调用该接口，通知LinkActive
 
+* URL：在用户活跃状态接口中callback参数的值
+* Method：GET
+* Description：用于LinkActive记录设备激活状态
+
+
 
 ## 离线方式
 广告主提供一个沉默用户的列表，LinkActive每次针对这个离线列表的数据进行沉默用户的匹配，相对在线传输方式效果较差。
