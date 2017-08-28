@@ -62,7 +62,7 @@
 }
 ```
 
-### LinkActive接口
+### LinkActive接口（非必须调用）
 #### callback接口
 当广告主发现该用户已经激活，那么调用该接口，通知LinkActive
 
