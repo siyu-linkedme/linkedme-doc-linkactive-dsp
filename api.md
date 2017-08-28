@@ -75,5 +75,5 @@
 ## 离线方式
 广告主提供一个沉默用户的列表，LinkActive每次针对这个离线列表的数据进行沉默用户的匹配，相对在线传输方式效果较差。
 
-## <font color="red">关于打开app的scheme的说明</font>
-广告主需要准备一个打开app的scheme，并能统计这个scheme，以便在后期进行数据比对和结算。scheme支持根据不同媒体的参数进行统计，例如: ws://index?openFrom={param}
+## 关于打开app的scheme的说明
+<font color="red">广告主需要准备一个打开app的scheme，并能统计这个scheme，以便在后期进行数据比对和结算</font>。scheme支持根据不同媒体的参数进行统计，例如: ws://index?openFrom={param}
