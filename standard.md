@@ -77,7 +77,7 @@
 
 LinkActive的工作原理：
 
-![](/assets/dsp-1.png)
+![](/assets/ggz-new.jpg)
 
 
 # 核对数据
