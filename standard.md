@@ -11,7 +11,7 @@
 # 接入流程
 ## 接入前提
 
-1、<font color="red">广告主app必须能够支持deeplink调起</font>
+1、<font color="red">广告主app必须能够支持deeplink调起</font><br>
 2、广告主接入LinkActive拉活平台，需要提供两个方面的内容，第一是广告主APP相关信息；第二是沉默用户的列表；
 
 ### APP基本信息
