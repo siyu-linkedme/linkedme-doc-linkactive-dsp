@@ -17,7 +17,7 @@
 ##### <font color="red">接口频次限制</font>：
 如果广告主对接口频次有调用限制，每秒的请求数量放行在2000次以上。如果广告主能够提供批量接口，那么该数据可以相应降低（可以和技术同学商定）
 
-##### 接口定义：
+##### 单设备接口定义：
 * URL：http://domain.com/ad/is_valid_id(广告主自己定义)
 * Method：GET
 * Description：用于LinkActive判断一个设备id是否为广告主的沉默用户id
@@ -25,8 +25,8 @@
 
 |参数|类型|是否必填|描述|
 |--|--|--|--|
-|id|String|必填|设备id|
-|type|int|必填|设备id类型：<br>0：iOS<br>1：Android|
+|id|String|必填|设备id，Android使用imei，iOS使用idfa|
+|type|int|非必填|设备id类型：<br>0：iOS<br>1：Android|
 |is_md5|boolean|必填|设备id是原值(false)，还是md5值(true)|
 
 * Response
@@ -37,6 +37,28 @@
 "res":"true" 	//如果是活跃（沉默) 用户返回true，否则返回false
 }
 ```
+##### 多设备接口定义：
+* URL：http://domain.com/ad/is_valid_id(广告主自己定义)
+* Method：GET/POST
+* Description：用于LinkActive判断多个设备id是否为广告主的沉默用户id
+* 参数说明（推荐，广告主自定义）
+
+|参数|类型|是否必填|描述|
+|--|--|--|--|
+|ids|String|必填|设备id，Android使用imei，iOS使用idfa，使用逗号分隔|
+|type|int|非必填|设备id类型：<br>0：iOS<br>1：Android，如果Android和iOS设备混在ids中，那么不传该参数|
+|is_md5|boolean|必填|设备id是原值(false)，还是md5值(true)|
+
+* Response
+
+
+```
+{
+"res":"true" 	//如果是活跃（沉默) 用户返回true，否则返回false
+}
+```
+
+
 
 #### 用户拉活状态接口（非必须）
 广告主提供，用户LinkActive平台调用，当平台接受到用户被激活状态的请求，调用该接口通知广告主。
