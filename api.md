@@ -14,27 +14,7 @@
 ##### <font color="red">接口频次限制</font>：
 接口<font color="red">必须</font>支持批量请求，单次请求设备量为200，QPS≥1000。
 
-##### 单设备接口定义：
-* URL：http://domain.com/ad/is_valid_id(广告主自己定义)
-* Method：GET
-* Description：用于LinkActive判断一个设备id是否为广告主的沉默用户id
-* 参数说明（推荐，广告主自定义）
-
-|参数|类型|是否必填|描述|
-|--|--|--|--|
-|id|String|必填|设备id，Android使用imei，iOS使用idfa|
-|type|int|非必填|设备id类型：<br>0：iOS<br>1：Android|
-|is_md5|boolean|必填|设备id是原值(false)，还是md5值(true)|
-
-* Response
-
-
-```
-{
-"res":"true" 	//如果是沉默/活跃用户返回true，否则返回false
-}
-```
-##### 多设备接口定义：
+##### 接口定义：
 * URL：http://domain.com/ad/is_valid_id(广告主自己定义)
 * Method：GET/POST
 * Description：用于LinkActive判断多个设备id是否为广告主的沉默用户id
