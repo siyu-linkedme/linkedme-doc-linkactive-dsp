@@ -31,7 +31,7 @@
 
 ```
 {
-"res":"true" 	//如果是沉默/活跃用户返回true，否则返回false
+"silent_ids":[id1,id2]	//如果是沉默用户接口，列表里返回<font color="red">沉默用户</font>的id；如果是活跃用户接口，列表里返回<font color="red">非活跃用户</font>的id
 }
 ```
 
