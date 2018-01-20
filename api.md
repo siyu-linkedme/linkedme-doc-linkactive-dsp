@@ -27,8 +27,8 @@
 
 * Response
 
-如果是沉默用户接口，列表里返回<font color="red">沉默用户</font>的id；
-如果是活跃用户接口，列表里返回<font color="red">非活跃用户</font>的id
+如果是沉默用户接口，列表里返回<font color="red">沉默用户</font>的md5(id)；
+如果是活跃用户接口，列表里返回<font color="red">非活跃用户</font>的md5(id)
 
 
 ```
