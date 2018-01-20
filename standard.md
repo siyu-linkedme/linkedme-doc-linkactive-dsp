@@ -6,7 +6,7 @@
 
 # 接入形式
 
-广告主接入LinkActive平台不需要集成SDK，只需要向LinkedME提供沉默用户的设备ID列表以及APP的相关信息，LinkActive平台的投放运营人员负责素材的编辑及投放，广告主查看沉默用户的拉活效果。
+广告主接入LinkActive平台不需要集成SDK，只需要向LinkedME提供沉默用户的设备ID列表（md5值）以及APP的相关信息，LinkActive平台的投放运营人员负责素材的编辑及投放，广告主查看沉默用户的拉活效果。
 
 # 接入流程
 ## 接入前提
@@ -36,12 +36,12 @@
 广告主向LinkActive平台提供沉默用户设备ID的MD5数据即可，媒体方向LinkActive平台请求拉活广告资源时，也是以设备ID的MD5作为Key向LinkActive平台查询。因此对于LinkActive平台不知道广告主的具体沉默用户列表数据。传输方法具体参见[传输沉默用户列表API文档](/api.md)
 
 
-|平台|设备ID|设备ID的MD5|示例|
-|--|--|--|--|
-|Android|imei|md5（imei）|IMEI：862033033085604<br>MD5（IMEI）：b0131ecfa9495650f1fee8e11dd7164f|
-|iOS|IDFA|md5（IDFA）|IDFA：FFFF50E1-4F95-44E8-9D19-25FE4E5AB8F8 <br>md5（IDFA）：7ed40e55b2f37c519fa23a63d31d6cdc|
+|平台|设备ID的MD5|示例|
+|--|--|--|
+|Android|md5（imei）|IMEI：862033033085604<br>MD5（IMEI）：b0131ecfa9495650f1fee8e11dd7164f|
+|iOS|md5（IDFA）|IDFA：FFFF50E1-4F95-44E8-9D19-25FE4E5AB8F8 <br>md5（IDFA）：7ed40e55b2f37c519fa23a63d31d6cdc|
 
-<font color="red">注意事项：imei和IDFA必须是原值，不要做大小写转化；</font>
+<font color="red">注意事项：设备id必须传md5后的值，且做md5的设备imei和IDFA必须是原值，不要做大小写转化；</font>
 
 
 
