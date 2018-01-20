@@ -7,7 +7,7 @@
 
 ### 广告主需要提供的接口
 #### 判断沉默/活跃用户接口（必须）
-广告主提供，用于LinkActive平台调用，用来判断一个设备id是否为广告主的沉默用户（沉默用户是指在一定天数之内没有打开广告主App的用户）。
+广告主提供，用于LinkActive平台调用，用来判断一个设备id(<font color="red">md5后的imei/idfa</font>)是否为广告主的沉默用户（沉默用户是指在一定天数之内没有打开广告主App的用户）。
 ##### <font color="red">接口性能要求</font>：
 满足从我们服务器上连接之后到数据传输结束时长在100ms以内（我们的机房在北京）
 
@@ -17,14 +17,13 @@
 ##### 接口定义：
 * URL：http://domain.com/ad/is_valid_id(广告主自己定义)
 * Method：GET/POST
-* Description：用于LinkActive判断多个设备id是否为广告主的沉默用户id
+* Description：用于LinkActive判断多个设备id(<font color="red">md5后的imei/idfa</font>)是否为广告主的沉默用户id
 * 参数说明（推荐，广告主自定义）
 
 |参数|类型|是否必填|描述|
 |--|--|--|--|
-|ids|String|必填|设备id，Android使用imei，iOS使用idfa，使用逗号分隔|
+|ids|String|必填|md5后的设备id，Android使用md5(imei)，iOS使用md5(idfa)，使用逗号分隔|
 |type|int|非必填|设备id类型：<br>0：iOS<br>1：Android，如果Android和iOS设备混在ids中，那么不传该参数|
-|is_md5|boolean|必填|设备id是原值(false)，还是md5值(true)|
 
 * Response
 
@@ -34,7 +33,7 @@
 
 ```
 {
-"silent_ids":[id1,id2]	//如果是沉默用户接口，列表里返回沉默用户的id；如果是活跃用户接口，列表里返回非活跃用户的id
+"silent_ids":[id1,id2]	//如果是沉默用户接口，列表里返回沉默用户的md5(id)；如果是活跃用户接口，列表里返回非活跃用户的md5(id)
 }
 ```
 
