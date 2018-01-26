@@ -51,7 +51,7 @@
 |--|--|--|--|
 |appid|String|必填|广告主的appid|
 |type|int|必填|设备id类型：<br>0：iOS<br>1：Android|
-|deviceId|String|必填|设备id|
+|deviceId|String|必填|md5后的设备id，Android使用md5(imei)，iOS使用md5(idfa)|
 
 * Response
 
